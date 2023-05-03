@@ -6,7 +6,8 @@
 
 //! Task 2
 //? Напишите функцию, которая вернет массив с текстами внутри тэгов - a.
-
+const task2 = document.querySelectorAll('.top-nav a')
+console.log(Array.from(task2).map(el => el.innerText));
 //! Task 3
 //?Напишите функцию, которая вернет массив с текстами внутри тэгов элементов с классом navlinkitem
 
