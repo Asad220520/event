@@ -1,5 +1,7 @@
 //! Task 1
 //? Напишите функцию, которая вернет текст внутри первого тэга - a.
+// const task1 = document.querySelector(".zero")
+// console.log(task1.innerHTML)
 
 
 //! Task 2
@@ -7,6 +9,8 @@
 
 
 
+const task2 = document.querySelectorAll('.top-nav a')
+console.log(Array.from(task2).map(el => el.innerText));
 //! Task 3
 //?Напишите функцию, которая вернет массив с текстами внутри тэгов элементов с классом navlinkitem
 
