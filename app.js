@@ -1,5 +1,7 @@
 //! Task 1
 //? Напишите функцию, которая вернет текст внутри первого тэга - a.
+// const task1 = document.querySelector(".zero")
+// console.log(task1.innerHTML)
 
 
 //! Task 2
