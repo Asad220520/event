@@ -79,3 +79,5 @@ task8.forEach((el) => {
   }
 })
 // yourElementsArray.forEach((element) => {})
+// asadbek
+
