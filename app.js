@@ -1,35 +1,35 @@
 //! Task 1
 //? Напишите функцию, которая вернет текст внутри первого тэга - a.
-const task1 = document.querySelector(".zero")
-console.log(task1.innerHTML)
+// const task1 = document.querySelector(".zero")
+// console.log(task1.innerHTML)
 
 
 //! Task 2
 //? Напишите функцию, которая вернет массив с текстами внутри тэгов - a.
 
-const task2 = document.querySelectorAll('.top-nav a')
-console.log(Array.from(task2).map(el => el.innerText));
+// const task2 = document.querySelectorAll('.top-nav a')
+// console.log(Array.from(task2).map(el => el.innerText));
 
 //! Task 3
 //?Напишите функцию, которая вернет массив с текстами внутри тэгов элементов с классом navlinkitem
 
-const task3 = document.querySelectorAll('.navlinkitem')
-console.log(Array.from(task3).map(el => {
-    return el.innerHTML
-}))
+// const task3 = document.querySelectorAll('.navlinkitem')
+// console.log(Array.from(task3).map(el => {
+//     return el.innerHTML
+// }))
 
 //! Task 4
 //? Напишите функцию, которая вернет массив со значениями атрибута class внутри тэгов элементов с классом navlinkitem
-const task4 = document.querySelector(".navlinkitem")
-console.log(Array.from(task4).filter(el =>{
-    return el.getAttribute("class")
-}))
+// const task4 = document.querySelector(".navlinkitem")
+// console.log(Array.from(task4).filter(el =>{
+//     return el.getAttribute("class")
+// }))
 
 
 //! Task 5
 //? Напишите функцию, которая вернет массив со значениями атрибута data-link внутри тэгов элементов с классом nav__link .
-const task5 = document.querySelectorAll('.nav__link')
-console.log(Array.from(task5).map(el => el.getAttribute('data-link')));
+// const task5 = document.querySelectorAll('.nav__link')
+// console.log(Array.from(task5).map(el => el.getAttribute('data-link')));
 
 //! Task 6
 //? Вы пишете робота, который проверяет, что страница отображается корректно, по правилам внутри элемента с классом
@@ -41,10 +41,10 @@ console.log(Array.from(task5).map(el => el.getAttribute('data-link')));
 // Ваша задача вернуть массив атрибутов data-link у элементов, у которых сломана логика. То есть текст внутри не имеет соответствующего класса.
 // Используйте map для обхода массива. Иными словами элемент считается сломанным если в классах не содержится текста элемента.
 
-const task6 = document.querySelectorAll('.top-nav a')
-console.log(Array.from(task6).filter(el => {
-    return el.classList[1] !== el.innerHTML
-}))
+// const task6 = document.querySelectorAll('.top-nav a')
+// console.log(Array.from(task6).filter(el => {
+//     return el.classList[1] !== el.innerHTML
+// }))
 
 //! Task 7
 //? Обновите текст всех элементов с классом nav__link , по следующему шаблону
@@ -68,14 +68,4 @@ task7.forEach((el,idx)=>{
 //! Task 8
 // Вы знаете, что в документе есть сломанные элементы с классом nav__link. Удалите их на странице. Для удаления используйте forEach.
 // Что бы удалить элемент из DOM - используйте метод .remove()
-
-// yourElementsArray.forEach((element) => {
-
-// })
-const task8 = document.querySelectorAll('.nav__link')
-task8.forEach((el) => {
-  if (el.classList[1] !== el.innerHTML) {
-    return el.remove()
-  }
-})
 // yourElementsArray.forEach((element) => {})
