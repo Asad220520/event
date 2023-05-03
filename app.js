@@ -11,6 +11,10 @@
 
 // const task2 = document.querySelectorAll('.top-nav a')
 // console.log(Array.from(task2).map(el => el.innerText));
+
+const task2 = document.querySelectorAll('.top-nav a')
+console.log(Array.from(task2).map(el => el.innerText));
+
 //! Task 3
 //?Напишите функцию, которая вернет массив с текстами внутри тэгов элементов с классом navlinkitem
 
@@ -21,11 +25,16 @@
 
 //! Task 4
 //? Напишите функцию, которая вернет массив со значениями атрибута class внутри тэгов элементов с классом navlinkitem
+const task4 = document.querySelector(".navlinkitem")
+console.log(Array.from(task4).filter(el =>{
+    return el.getAttribute("class")
+}))
 
 
 //! Task 5
 //? Напишите функцию, которая вернет массив со значениями атрибута data-link внутри тэгов элементов с классом nav__link .
-
+const task5 = document.querySelectorAll('.nav__link')
+console.log(Array.from(task5).map(el => el.getAttribute('data-link')));
 
 //! Task 6
 //? Вы пишете робота, который проверяет, что страница отображается корректно, по правилам внутри элемента с классом
