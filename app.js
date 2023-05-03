@@ -6,9 +6,6 @@
 
 //! Task 2
 //? Напишите функцию, которая вернет массив с текстами внутри тэгов - a.
-
-
-
 const task2 = document.querySelectorAll('.top-nav a')
 console.log(Array.from(task2).map(el => el.innerText));
 //! Task 3
@@ -25,7 +22,8 @@ console.log(Array.from(task3).map(el => {
 
 //! Task 5
 //? Напишите функцию, которая вернет массив со значениями атрибута data-link внутри тэгов элементов с классом nav__link .
-
+const task5 = document.querySelectorAll('.nav__link')
+console.log(Array.from(task5).map(el => el.getAttribute('data-link')));
 
 //! Task 6
 //? Вы пишете робота, который проверяет, что страница отображается корректно, по правилам внутри элемента с классом nav__link должен быть текст порядкового номера индекса. И у этого же элемента должен быть класс с текстовым номером индекса.
