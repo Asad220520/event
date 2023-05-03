@@ -9,15 +9,15 @@
 
 
 
-const task2 = document.querySelectorAll('.top-nav a')
-console.log(Array.from(task2).map(el => el.innerText));
+// const task2 = document.querySelectorAll('.top-nav a')
+// console.log(Array.from(task2).map(el => el.innerText));
 //! Task 3
 //?Напишите функцию, которая вернет массив с текстами внутри тэгов элементов с классом navlinkitem
 
-const task3 = document.querySelectorAll('.navlinkitem')
-console.log(Array.from(task3).map(el => {
-    return el.innerHTML
-}))
+// const task3 = document.querySelectorAll('.navlinkitem')
+// console.log(Array.from(task3).map(el => {
+//     return el.innerHTML
+// }))
 
 //! Task 4
 //? Напишите функцию, которая вернет массив со значениями атрибута class внутри тэгов элементов с классом navlinkitem
@@ -28,13 +28,20 @@ console.log(Array.from(task3).map(el => {
 
 
 //! Task 6
-//? Вы пишете робота, который проверяет, что страница отображается корректно, по правилам внутри элемента с классом nav__link должен быть текст порядкового номера индекса. И у этого же элемента должен быть класс с текстовым номером индекса.
+//? Вы пишете робота, который проверяет, что страница отображается корректно, по правилам внутри элемента с классом
+// nav__link должен быть текст порядкового номера индекса. И у этого же элемента должен быть класс с текстовым номером индекса.
 // Например
 // <a class="nav__link  first" data-link="1">first</a>
 // Но база данных была повреждена и по ошибке некоторые элементы стали отображаться с некорректно.
 // <a class="nav__link  zero" data-link="0">first</a>
 // Ваша задача вернуть массив атрибутов data-link у элементов, у которых сломана логика. То есть текст внутри не имеет соответствующего класса.
 // Используйте map для обхода массива. Иными словами элемент считается сломанным если в классах не содержится текста элемента.
+
+const task6 = document.querySelectorAll('.top-nav a')
+console.log(Array.from(task6).filter(el => {
+    return el.classList[1] !== el.innerHTML
+}))
+
 //! Task 7
 //? Обновите текст всех элементов с классом nav__link , по следующему шаблону
 // <a href="#" class="nav__link zero" data-link="0">zero</a>
