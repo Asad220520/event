@@ -5,9 +5,15 @@
 //! Task 2
 //? Напишите функцию, которая вернет массив с текстами внутри тэгов - a.
 
+
+
 //! Task 3
 //?Напишите функцию, которая вернет массив с текстами внутри тэгов элементов с классом navlinkitem
 
+const task3 = document.querySelectorAll('.navlinkitem')
+console.log(Array.from(task3).map(el => {
+    return el.innerHTML
+}))
 
 //! Task 4
 //? Напишите функцию, которая вернет массив со значениями атрибута class внутри тэгов элементов с классом navlinkitem
