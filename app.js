@@ -72,3 +72,9 @@ console.log(Array.from(task6).filter(el => {
 // yourElementsArray.forEach((element) => {
 
 // })
+const task8 = document.querySelectorAll('.nav__link')
+task8.forEach((el) => {
+  if (el.classList[1] !== el.innerHTML) {
+    return el.remove()
+  }
+})
