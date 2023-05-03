@@ -68,4 +68,14 @@ task7.forEach((el,idx)=>{
 //! Task 8
 // Вы знаете, что в документе есть сломанные элементы с классом nav__link. Удалите их на странице. Для удаления используйте forEach.
 // Что бы удалить элемент из DOM - используйте метод .remove()
+
+// yourElementsArray.forEach((element) => {
+
+// })
+const task8 = document.querySelectorAll('.nav__link')
+task8.forEach((el) => {
+  if (el.classList[1] !== el.innerHTML) {
+    return el.remove()
+  }
+})
 // yourElementsArray.forEach((element) => {})
