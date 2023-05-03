@@ -18,6 +18,10 @@ console.log(Array.from(task3).map(el => {
 
 //! Task 4
 //? Напишите функцию, которая вернет массив со значениями атрибута class внутри тэгов элементов с классом navlinkitem
+const task4 = document.querySelector(".navlinkitem")
+console.log(Array.from(task4).filter(el =>{
+    return el.getAttribute("class")
+}))
 
 
 //! Task 5
